@@ -65,9 +65,20 @@ Baza danych, oparta na systemie zarządzania bazą danych SQL będzie zawierała
 * Tytuł
 * Cena
 * Opis
-Tabela User zawiera dane użytkowników takie jak imię, nazwisko, email i hasło.  
-Tabela Orders zawiera dane o zamówieniach zrobionych przez klientów( dane klienta, książka która została wybrana)
-Instrukcja uruchomienia projektu
-Po uruchomieniu projektu nie ma dostępu do żadnej strony, na początku trzeba utworzyć role Admin, User( z wielkiej litery), ale na podstronie Role nie będą one wyświetlone , będą one wyświetlone tyko przy rejestracji. 
-Dostęp do Roli jest na początku dostępny dla każdego ponieważ jest w controlerze authorize(AppRoleController.cs-> //Authorize(Roles=”Admin”)) zakomentowany aby na początku dało się stworzyć rolę Admin lub inny, po tym można odkomentować i tylko admin będzie mieć dostęp.
-Teraz można utworzyć nowe konto i wybrać rolę. User będzie mieć dostęp do stron: Home, Zamówienie, Privacy oraz Rejestracja z Logowaniem. Administrator będzie mieć dostęp do każdej podstrony
+### Tabela User zawiera dane użytkowników takie jak:
+* Imię
+* Nazwisko
+* Email
+* Hasło  
+### Tabela Orders zawiera dane o zamówieniach zrobionych przez klientów( dane klienta, książka która została wybrana)
+## Instrukcja uruchomienia projektu
+Po uruchomieniu projektu nie ma dostępu do żadnej strony. Na początku trzeba utworzyć role Admin, User(z wielkiej litery), ale na podstronie Role nie będą one wyświetlone. Są one wykorzystywane i pokazywane tylko przy rejestracji. 
+Dostęp do Roli jest na początku dostępny dla każdego, ponieważ jest w controllerze authorize(AppRoleController.cs-> //Authorize(Roles=”Admin”)) zakomentowany, aby na początku dało się stworzyć rolę Admin lub inny, po tym można odkomentować i tylko admin będzie mieć dostęp.
+Teraz można utworzyć nowe konto i wybrać rolę. User będzie mieć dostęp do stron:
+* Home
+* Zamówienie
+* Privacy
+* Rejestracja
+* Logowanie.
+
+Administrator będzie mieć dostęp do każdej podstrony
