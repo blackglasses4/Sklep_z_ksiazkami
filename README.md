@@ -2,7 +2,14 @@
 ## Dokumentacja techniczna: Strona Internetowa z książkami
 
 ### Dokumentacja techniczna przedstawia ogólny opis strony internetowej związanej z książkami. Projekt zostanie zbudowany w oparciu o: 
-* framework ASP.NET MVC, Entity FrameWork Core dla dostępu do danych oraz wykorzystując język C#. Dodatkowo, front end oparty jest na standardach HTML5, CSS3 oraz Bootstrap.
+* framework ASP.NET MVC
+* Entity FrameWork Core dla dostępu do danych
+* język C#.
+
+### Dodatkowo, front end oparty jest na standardach
+* HTML5
+* CSS3
+* Bootstrap.
 
 Rejestracja i Logowanie użytkownika: Użytkownicy będą mieli możliwość rejestracji oraz logowania użytkownika, co umożliwi im dostęp do funkcji sklepu, dodawania produktów do strony z zamówieniami oraz realizacji zamówień. Bez niej nie można wejść na żadną stronę. Każdy użytkownik podczas rejestracji ma do napisania: First Name, Last Name, Email, Password, Confirm Password oraz Rolę. W roli trzeba określić w osobnej podstronie, która jest dostępna tylko dla Admina, można wpisać więcej ról.
 
