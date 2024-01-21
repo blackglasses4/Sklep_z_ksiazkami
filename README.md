@@ -19,9 +19,9 @@ Każdy użytkownik podczas rejestracji ma do napisania:
 * Last Name, Email
 * Password
 * Confirm Password
-* Rolę.
+* Rola (W roli trzeba określić w osobnej podstronie, która jest dostępna tylko dla Admina, można wpisać więcej ról.)
 
-W roli trzeba określić w osobnej podstronie, która jest dostępna tylko dla Admina, można wpisać więcej ról.
+
 
 Strona główna: Na stronie głównej sklepu będą produkty, które wyświetlą: Zdjęcie okładki, tytuł, cenę, opis oraz autora. Użytkownik ma możliwość kupić produkt, który zostanie zapisany w zamówieniu.
 
