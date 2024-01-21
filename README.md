@@ -12,7 +12,7 @@
 * Bootstrap.
 
 ## Rejestracja i Logowanie użytkownika:
-### Użytkownicy będą mieli możliwość rejestracji oraz logowania użytkownika, co umożliwi im dostęp do funkcji sklepu, dodawania produktów do strony z zamówieniami oraz realizacji zamówień. Bez niej nie można wejść na żadną stronę. Każdy użytkownik podczas rejestracji ma do napisania: First Name, Last Name, Email, Password, Confirm Password oraz Rolę. W roli trzeba określić w osobnej podstronie, która jest dostępna tylko dla Admina, można wpisać więcej ról.
+##### Użytkownicy będą mieli możliwość rejestracji oraz logowania użytkownika, co umożliwi im dostęp do funkcji sklepu, dodawania produktów do strony z zamówieniami oraz realizacji zamówień. Bez niej nie można wejść na żadną stronę. Każdy użytkownik podczas rejestracji ma do napisania: First Name, Last Name, Email, Password, Confirm Password oraz Rolę. W roli trzeba określić w osobnej podstronie, która jest dostępna tylko dla Admina, można wpisać więcej ról.
 
 Strona główna: Na stronie głównej sklepu będą produkty, które wyświetlą: Zdjęcie okładki, tytuł, cenę, opis oraz autora. Użytkownik ma możliwość kupić produkt, który zostanie zapisany w zamówieniu.
 
