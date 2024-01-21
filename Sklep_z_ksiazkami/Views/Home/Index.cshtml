@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Sklep_z_ksiazkami.Models.Book>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Książki</h1>
+
+
+<div class="row-mt-5 mb-2">
+    @if (Model != null)
+    {
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4">
+                <img src="image/@Html.DisplayFor(modelItem => item.Img)" alt="zdjęcie">
+                <h2>Tytuł: @Html.DisplayFor(modelItem => item.Title)</h2>
+                <h5>Cena: @Html.DisplayFor(modelItem => item.Price)</h5>
+                <h5>Opis: @Html.DisplayFor(modelItem => item.Description)</h5>
+                <h5>Autor: @Html.DisplayFor(modelItem => item.Author)</h5>
+            </div>
+            <p><a class="btn btn-warning" href=@($"/Home/Add/{item.Id}")>Kup</a></p>
+        }
+    }
+    else
+    {
+        <p>Brak danych do wyświetlenia.</p>
+    }
+</div>
