@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,20 +12,39 @@ using Sklep_z_ksiazkami.Models;
 
 namespace Sklep_z_ksiazkami.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public OrdersController(ApplicationDbContext context)
+        public OrdersController(ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Orders
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Order.Include(o => o.Book).Include(o => o.User);
-            return View(await applicationDbContext.ToListAsync());
+            IdentityUser user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            // Sprawdzenie czy użytkownik jest administratorem
+            if (_userManager.IsInRoleAsync(user, "Admin").Result)
+            {
+                // Admin widzi wszystkie książki
+                var allOrders = _context.Order.Include(o => o.Book).Include(o => o.User);
+                return View(await allOrders.ToListAsync());
+            }
+            else
+            {
+                // Zwykły użytkownik widzi tylko swoje książki
+                var userBooks = _context.Order.Where(b => b.UserId == user.Id).Include(b => b.Book);
+                return View(await userBooks.ToListAsync());
+            }
+
+            //var applicationDbContext = _context.Order.Include(o => o.Book).Include(o => o.User);
+            //return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Orders/Details/5

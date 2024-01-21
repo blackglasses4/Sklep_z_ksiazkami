@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Sklep_z_ksiazkami.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class AppRolesController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;

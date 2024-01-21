@@ -5,7 +5,7 @@
 }
 
 
-<h1>Książki</h1>
+<h1 id="ksiazka">Książki</h1>
 
 
 <div class="row-mt-5 mb-2">
@@ -13,14 +13,26 @@
     {
         @foreach (var item in Model)
         {
-            <div class="col-lg-4">
-                <img src="image/@Html.DisplayFor(modelItem => item.Img)" alt="zdjęcie">
-                <h2>Tytuł: @Html.DisplayFor(modelItem => item.Title)</h2>
-                <h5>Cena: @Html.DisplayFor(modelItem => item.Price)</h5>
-                <h5>Opis: @Html.DisplayFor(modelItem => item.Description)</h5>
-                <h5>Autor: @Html.DisplayFor(modelItem => item.Author)</h5>
+            <div class="album py-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card mb-3 shadow-sm">
+                                <img src="image/@Html.DisplayFor(modelItem => item.Img)" alt="zdjęcie">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                    <div class="card-text align-items-center">
+                                        <h4>Tytuł: @Html.DisplayFor(modelItem => item.Title)</h4>
+                                        <h5>Cena: @Html.DisplayFor(modelItem => item.Price)</h5>
+                                        <h5>Opis: @Html.DisplayFor(modelItem => item.Description)</h5>
+                                        <h5>Autor: @Html.DisplayFor(modelItem => item.Author)</h5>
+                                        <p><a class="btn btn-warning" href=@($"/Home/Add/{item.Id}")>Kup</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
             </div>
-            <p><a class="btn btn-warning" href=@($"/Home/Add/{item.Id}")>Kup</a></p>
         }
     }
     else
