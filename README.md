@@ -41,8 +41,15 @@ Na nagłówku będzie możliwość wyboru strony:
 * Rejestracja
 * Logowanie.
 
-Książki: Na podstronie, która jest dostępna tylko dla Admina, jest możliwość zobaczenia wszystkich książek. Może je dodawać, edytować i usuwać. Przy dodawaniu książki Admin wpisuje Tytuł, Autora, dodaje opis i  img( ścieżka w kodzie: wwwroot-> img, dotąd można dodawać zdjęcia książek ( przy dodawaniu trzeba wpisać nazwę tego obrazku np. inna.jpg)) 
-Zamówienia: Użytkownicy mają dostęp do przejrzenia swoich zamówień, w których są podane dane: Data dodania zamówienia, nazwa książki, imię, nazwisko i email użytkownika, który dodał produkt oraz status zamówienia. Każdy użytkownik widzi tylko własne zamówienia, oprócz administratora, który ma dostęp do wszystkich zamówień. 
+## Książki:
+Na podstronie, która jest dostępna tylko dla Admina, jest możliwość zobaczenia wszystkich książek. Może je dodawać, edytować i usuwać. Przy dodawaniu książki Admin wpisuje:
+* Tytuł
+* Autora
+* Opis
+* Img ( ścieżka w kodzie: wwwroot-> img, dotąd można dodawać zdjęcia książek ( przy dodawaniu trzeba wpisać nazwę tego obrazku np. inna.jpg))
+
+## Zamówienia:
+Użytkownicy mają dostęp do przejrzenia swoich zamówień, w których są podane dane: Data dodania zamówienia, nazwa książki, imię, nazwisko i email użytkownika, który dodał produkt oraz status zamówienia. Każdy użytkownik widzi tylko własne zamówienia, oprócz administratora, który ma dostęp do wszystkich zamówień. 
 Operacje CRUD dla Administratora: Administrator sklepu będzie miał możliwość przeprowadzania operacji CRUD (Create, Read, Update, Delete) na wszystkich podstronach.
 Baza danych, oparta na systemie zarządzania bazą danych SQL będzie zawierała takie tabele:
 Tabela Book przechowuje informacje o książkach, takie jak obrazek, tytuł, cena, opis.
