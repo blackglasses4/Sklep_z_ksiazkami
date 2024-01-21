@@ -1,5 +1,5 @@
-Adrianna Pawłowska, Anastasiia Kobzar.
-Dokumentacja techniczna: Strona Internetowa z książkami
+#Adrianna Pawłowska, Anastasiia Kobzar.
+##Dokumentacja techniczna: Strona Internetowa z książkami
 
 Dokumentacja techniczna przedstawia ogólny opis strony internetowej związanej z książkami. Projekt zostanie zbudowany w oparciu o framework ASP.NET MVC, Entity FrameWork Core dla dostępu do danych oraz wykorzystując język C#. Dodatkowo, front end oparty jest na standardach HTML5, CSS3 oraz Bootstrap.
 
