@@ -7,7 +7,7 @@ Rejestracja i Logowanie użytkownika: Użytkownicy będą mieli możliwość rej
 
 Strona główna: Na stronie głównej sklepu będą produkty, które wyświetlą: Zdjęcie okładki, tytuł, cenę, opis oraz autora. Użytkownik ma możliwość kupić produkt, który zostanie zapisany w zamówieniu.
 
-	 Na nagłówku będzie możliwość wyboru strony: Home, Książki, Zamówienie, Role, Privacy, Rejestracja oraz Logowanie.
+Na nagłówku będzie możliwość wyboru strony: Home, Książki, Zamówienie, Role, Privacy, Rejestracja oraz Logowanie.
 
 Książki: Na podstronie, która jest dostępna tylko dla Admina, jest możliwość zobaczenia wszystkich książek. Może je dodawać, edytować i usuwać. Przy dodawaniu książki Admin wpisuje Tytuł, Autora, dodaje opis i  img( ścieżka w kodzie: wwwroot-> img, dotąd można dodawać zdjęcia książek ( przy dodawaniu trzeba wpisać nazwę tego obrazku np. inna.jpg)) 
 Zamówienia: Użytkownicy mają dostęp do przejrzenia swoich zamówień, w których są podane dane: Data dodania zamówienia, nazwa książki, imię, nazwisko i email użytkownika, który dodał produkt oraz status zamówienia. Każdy użytkownik widzi tylko własne zamówienia, oprócz administratora, który ma dostęp do wszystkich zamówień. 
